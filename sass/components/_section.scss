@@ -1,0 +1,16 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title,
+.team-section-title,
+.clients-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-collor);
+}
