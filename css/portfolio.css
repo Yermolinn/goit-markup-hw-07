@@ -39,10 +39,6 @@ button {
   border-radius: 4px;
 }
 
-.footer-adress-list a, .header-contact-list a, .nav-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 html {
   box-sizing: border-box;
 }
@@ -92,8 +88,8 @@ textarea {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-collor);
 }
 
@@ -160,6 +156,7 @@ textarea {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-collor);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover, .nav-link:focus {
   color: var(--accent-text-collor);
@@ -218,6 +215,7 @@ textarea {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-list a:hover, .header-contact-list a:focus {
   color: var(--accent-text-collor);
@@ -399,8 +397,11 @@ textarea {
   color: var(--secondary-text-collor);
   text-decoration: none;
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress-list a:hover, .footer-adress-list a:focus {
   color: var(--white-text-collor);
@@ -425,7 +426,7 @@ textarea {
 .footer-smm-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-collor);
@@ -436,6 +437,21 @@ textarea {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+}
+
+.smm-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-normal-color);
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.smm-link:hover, .smm-link:focus {
+  background-color: var(--accent-btn-collor);
+  color: var(--white-bgc-collor);
 }
 
 .footer-bgc-icon {
@@ -460,7 +476,7 @@ textarea {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-collor);
@@ -497,9 +513,9 @@ textarea {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--white-text-collor);
   background-color: var(--accent-btn-collor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
