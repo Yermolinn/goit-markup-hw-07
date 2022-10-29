@@ -1,5 +1,6 @@
 @import './utils/vars';
 @import './base/reset';
+@import './utils/placeholders';
 @import './base/common';
 @import './utils/hidden';
 
@@ -17,5 +18,4 @@
 @import './layouts/production';
 @import './layouts/team';
 @import './layouts/clients';
-@import './layouts/portfolio';
 @import './layouts/footer';

@@ -1,8 +1,8 @@
-.page-team {
+.team {
   background-color: var(--sec-bgc-color);
 }
 
-.team-section-title {
+.team-title {
   margin-bottom: 50px;
 }
 
@@ -21,16 +21,11 @@
     }
   }
   & .title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+    @include font (500, 16px, 1.2, 0.03em);
     color: var(--title-text-color);
   }
   & .text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    @include font (400, 16px, 1.2, 0.03em);
     color: var(--secondary-text-collor);
   }
 }

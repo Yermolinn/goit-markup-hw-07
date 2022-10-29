@@ -39,6 +39,10 @@ button {
   border-radius: 4px;
 }
 
+.footer-adress-list a, .header-contact-list a, .nav-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -82,8 +86,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-.section-title,
-.team-section-title,
+.team-title,
 .clients-title {
   font-style: normal;
   font-weight: 700;
@@ -143,10 +146,6 @@ textarea {
   display: flex;
 }
 
-.site-nav .list {
-  margin-left: 0%;
-}
-
 .site-nav .item:not(:first-child) {
   margin-left: 50px;
 }
@@ -161,7 +160,6 @@ textarea {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-collor);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover, .nav-link:focus {
   color: var(--accent-text-collor);
@@ -220,7 +218,6 @@ textarea {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-list a:hover, .header-contact-list a:focus {
   color: var(--accent-text-collor);
@@ -404,7 +401,6 @@ textarea {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress-list a:hover, .footer-adress-list a:focus {
   color: var(--white-text-collor);

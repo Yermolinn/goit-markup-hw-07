@@ -82,15 +82,14 @@ textarea {
   padding-bottom: 94px;
 }
 
-.section-title,
-.team-section-title,
+.team-title,
 .clients-title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-collor);
 }
 
@@ -141,10 +140,6 @@ textarea {
 
 .site-nav {
   display: flex;
-}
-
-.site-nav .list {
-  margin-left: 0%;
 }
 
 .site-nav .item:not(:first-child) {
@@ -437,7 +432,7 @@ textarea::placeholder {
   color: var(--secondary-text-collor);
   text-decoration: none;
   align-items: center;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -499,8 +494,8 @@ textarea::placeholder {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-text-collor);
   width: 696px;
@@ -514,9 +509,9 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--white-text-collor);
   background: var(--accent-text-collor);
   border-radius: 4px;
@@ -533,13 +528,15 @@ textarea::placeholder {
   display: flex;
 }
 .feat-list .title {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 .feat-list .text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -575,27 +572,42 @@ textarea::placeholder {
   width: 70px;
 }
 
-.page-production {
+.production {
   padding-top: 0;
 }
 
-.production-title {
+.production__title {
   margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
-.thumb-production p {
+.production__list {
+  display: flex;
+}
+.production__list li {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+.production__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.production__thumb p {
   display: flex;
   position: absolute;
   width: 100%;
   height: 70px;
   font-weight: 700;
-  line-height: 1.14px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   bottom: 0;
@@ -606,25 +618,11 @@ textarea::placeholder {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.prod-list {
-  display: flex;
-}
-
-.prod-list li {
-  display: inline-block;
-  position: relative;
-  z-index: 10;
-}
-
-.prod-list > .item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.page-team {
+.team {
   background-color: var(--sec-bgc-color);
 }
 
-.team-section-title {
+.team-title {
   margin-bottom: 50px;
 }
 
@@ -645,6 +643,7 @@ textarea::placeholder {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team-list .text {
@@ -697,7 +696,6 @@ textarea::placeholder {
 
 .clients-title {
   margin-bottom: 50px;
-  width: calc(100% - 25px);
 }
 
 .clients-list {
@@ -725,122 +723,6 @@ textarea::placeholder {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.btn-portfolio {
-  margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  text-align: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  color: var(--white-text-collor);
-}
-
-.btn-portfolio li {
-  margin-left: 8px;
-}
-
-.filter-btn {
-  padding: 6px 22px;
-  display: flex;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.8;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-text-collor);
-  background: var(--sec-bgc-color);
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-portfolio .filter-btn:hover, .btn-portfolio .filter-btn:focus {
-  color: var(--white-text-collor);
-  background: var(--accent-btn-collor);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.filter-btn.current {
-  color: var(--white-text-collor);
-  background: var(--accent-text-collor);
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.portfolio-list > .item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.portfolio-element {
-  border: 1px solid #eeeeee;
-  padding: 20px 24px;
-  border-top: none;
-}
-
-.portfolio-element h2 {
-  margin-bottom: 4px;
-}
-
-.portfolio-list .title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-text-collor);
-}
-
-.portfolio-list .text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-collor);
-}
-
-.portfolio-list > .item a {
-  text-decoration: none;
-  display: block;
-  align-items: center;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-list > .item a:hover, .portfolio-list > .item a:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.thumb {
-  position: relative;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.portfolio-action-text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 63px 24px;
-  overflow: hidden;
-  font-size: 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  background: rgba(33, 150, 243, 0.9);
-  color: var(--white-text-collor);
-  text-align: left;
-  transform: translatey(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-list > .item a:hover .portfolio-action-text, .portfolio-list > .item a:focus .portfolio-action-text {
-  transform: translatey(0);
 }
 
 .footer {
@@ -874,8 +756,10 @@ textarea::placeholder {
   color: var(--secondary-text-collor);
   text-decoration: none;
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress-list a:hover, .footer-adress-list a:focus {
@@ -936,7 +820,7 @@ textarea::placeholder {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-collor);
@@ -973,9 +857,9 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--white-text-collor);
   background-color: var(--accent-btn-collor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
