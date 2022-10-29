@@ -439,7 +439,7 @@ textarea {
   margin-top: 20px;
 }
 
-.smm-link {
+.footer-smm-link {
   display: flex;
   height: 44px;
   width: 44px;
@@ -449,7 +449,7 @@ textarea {
   color: var(--icon-normal-color);
   transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.smm-link:hover, .smm-link:focus {
+.footer-smm-link:hover, .footer-smm-link:focus {
   background-color: var(--accent-btn-collor);
   color: var(--white-bgc-collor);
 }
