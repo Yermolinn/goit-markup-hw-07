@@ -31,7 +31,7 @@
   color: var(--secondary-text-collor);
   text-decoration: none;
   align-items: center;
-  @include font(700, 14px, 1.1, 0.02em);
+  @include font(500, 14px, 1.1, 0.02em);
   @include animation-color;
   &:hover,
   &:focus {
