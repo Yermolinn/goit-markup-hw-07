@@ -1,9 +1,5 @@
 .logo {
-    display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-
+    display: flex;
     text-decoration: none;
     font-family: 'Raleway';
     font-size: 26px;
@@ -23,22 +19,3 @@
 .blck {
     color: var(--black-text-collor);
 }
-
-.logo-header {
-    margin-top: 24px;
-    margin-bottom: 25px;
-}
-
-.footer-logo {
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--accent-text-collor);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-text-collor);
-    }
-}
-
